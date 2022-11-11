@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@import "colors.css";
+
+.formacao{
+    width: 100%;
+}
+
+.container-experiencia{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+.subtitulo-experiencia{
+    color: var(--subtitulo);
+    font-size: 8rem;
+    line-height: 1;
+    word-break: break-all;
+    max-width: 4ch;
+    text-transform: uppercase;
+}
+
+.experiencia > div >:nth-child(1){
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    color: var(--text-light);
+}
+
+.empresa{
+    font-size: 0.875rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--fundo-cinza);
+    gap: 10px 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.empresa::before{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#b6f829, #67dd0a);
+    position: absolute;
+    top: 20px;
+    left: -4px;
+}
+
+.empresa-ano{
+    position: absolute;
+    left: -100px;
+    top: 20px;
+    color: var(--text-light);
+    width: 80px;
+    text-align: right;
+    font-size: 1rem;
+}
+
+.empresa-titulo{
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+.empresa-texto{
+    line-height: 1.4;
+    color: var(--text-light);
+}
+
+.empresa-habilidades{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.empresa-habilidades > li{
+    display: block;
+    padding: 5px 8px;
+    border-radius: 4px;
+    background-color: var(--fundo-branco);
+}
+
+@media (max-width: 800px){
+    .container-experiencia{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .subtitulo-experiencia{
+        font-size: 3rem;
+        max-width: initial;
+        word-break: normal;
+        color: var(--text-bold);
+        text-transform: capitalize;
+    }
+
+    .experiencia > div >:nth-child(1){
+        font-size: 1.25rem;
+    }
+
+    .empresa-ano{
+        position: initial;
+        width: initial;
+        order: 1;
+        text-align: left;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 400px){
+    .empresa{
+        grid-template-columns: 1fr;
+    }
+}

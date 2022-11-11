@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import "colors.css";
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fira Sans', Arial, sans-serif;
+}
+
+.seta > img{
+    z-index: 1;
+    display: block;
+    width: 30px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

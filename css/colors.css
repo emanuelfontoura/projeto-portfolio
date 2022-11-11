@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+:root{
+    --text-bold: #141414; /* TITULO */
+    --text-light: #525252;  /* PARAGRAFO */
+    --subtitulo: #e0e0e0;  /* SUBTITULO */
+    --fundo-branco: #ffffff;  /* FUNDO BRANCO */
+    --fundo-cinza: #f5f5f5;  /* FUNDO CINZA */
+    --preto: #000000; /* PRETO */
+}

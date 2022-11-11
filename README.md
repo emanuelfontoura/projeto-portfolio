@@ -1,2 +1,2 @@
-# projeto-portfolio
- Projeto de portfólio pessoal.
+# portfolio
+ Meu portfólio criado junto ao Origamid.
