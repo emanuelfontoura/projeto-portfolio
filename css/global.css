@@ -2,6 +2,8 @@
 
 @import "colors.css";
 
+@font-face{font-family: Arial; font-display: swap;}
+
 /* RESET */
 *{
     margin: 0;

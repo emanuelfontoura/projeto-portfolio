@@ -14,11 +14,8 @@
 
 .introducao-imagem > img{
     max-width: 100%;
+    height: auto;
     display: block;
-}
-
-.introducao-titulo{
-    font-family: 'Fira Sans', Arial, sans-serif;
 }
 
 .introducao-titulo h1{
